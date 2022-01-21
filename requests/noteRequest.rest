@@ -1,0 +1,87 @@
+
+
+
+POST  http://localhost:8000/note
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+{
+    "title":"test note",
+    "color":"#fff",
+    "project_id":"61e97e9be88a0a03d17423f5"
+}
+
+### 
+GET   http://localhost:8000/note/61e97e9be88a0a03d17423f5
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+###
+
+DELETE    http://localhost:8000/note/61e9883c71ccf67d0e33d903
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+###
+PUT     http://localhost:8000/note/61e9884171ccf67d0e33d905
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+{
+    "color":"jkhgdsf"
+}
+
+###
+POST      http://localhost:8000/note/text
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+{
+    "text":"this is a text 2",
+    "id":"61e9957e398742c6542434ec"
+}
+
+###
+PUT       http://localhost:8000/note/text
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+{
+    "text":"new text2",
+    "id":"61e9964a6aeb494ad7970a8b"
+}
+
+###
+DELETE        http://localhost:8000/note/text/61e99d86e8fe9e50b587ce21
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+
+
+
+###
+POST      http://localhost:8000/note/task
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+{
+    "text":"this is a task",
+    "id":"61e9957e398742c6542434ec"
+}
+
+###
+PUT       http://localhost:8000/note/task
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+{
+    "done":true,
+    "id":"61e9a5e279c04f85563f8ac0"
+}
+
+###
+DELETE        http://localhost:8000/note/task/61e9a5a43acdcd0855d4cbc9
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+

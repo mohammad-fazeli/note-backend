@@ -1,0 +1,28 @@
+
+GET   http://localhost:8000/project/
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+###
+
+POST    http://localhost:8000/project/
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+{
+    "name":"this is a project"
+}
+
+###
+DELETE     http://localhost:8000/project/61e97bd2e87df2bfa53bc33c
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+###
+PUT http://localhost:8000/project/61e97e9be88a0a03d17423f5
+Content-Type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5NmVkODhlZmJmYjI0OThhMjIxNjAiLCJuYW1lIjoibW9oYW1tYWQiLCJlbWFpbCI6Im1vaGFtbWFkQGV4YW1wbGUuY29tIiwiaWF0IjoxNjQyNjg5NzY4LCJleHAiOjE2NDUyODE3Njh9.xIfPAb5huuSevKWDX8XYBs5QYVhbm515_JO54ENEFEA
+
+{
+    "name":"new name"
+}
