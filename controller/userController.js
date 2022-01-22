@@ -1,4 +1,5 @@
 const bcrypt = require("bcryptjs");
+const validator = require("validator");
 const { signToken } = require("../utils/auth");
 const User = require("../models/userModel");
 
@@ -6,8 +7,11 @@ exports.signUp = async (req, res) => {
   try {
     const find = await User.findOne({ email: req.body.email });
     if (find) {
-      res.send("user is existed");
+      res.status(409).send("user is existed");
       return;
+    }
+    if (!validator.isEmail(req.body.email)) {
+      return res.status(401).send("email is not valid");
     }
     const newUser = new User({
       name: req.body.name,
