@@ -1,4 +1,5 @@
 const Project = require("../models/projectModel");
+const Note = require("../models/noteModel");
 
 exports.getAll = async (req, res) => {
   try {
@@ -46,6 +47,7 @@ exports.deleteProject = async (req, res) => {
       _id: id,
       user_id: req.user._id,
     });
+    await Note.deleteMany({ project_id: id });
     const projects = await Project.find({ user_id: req.user._id });
     const result = projects.map((project) => {
       return {
